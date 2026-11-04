@@ -1,0 +1,295 @@
+<div class="container mt-5">
+  <h1 class="bg-success text-center text-white">1.empArr.....!!!!</h1>
+  <div class="row">
+    <div class="col-md-12">
+      <table class="table table-bordered bg-success text-white">
+        <thead class="thead-dark">
+          <tr>
+            <th>empId</th>
+            <th>empName</th>
+            <th>designation</th>
+            <th>salary</th>
+            <th>isPermanent</th>
+            <th>email</th>
+            <th>contact</th>
+            <th>action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let epm of empArr">
+            <td>{{epm.empId}}</td>
+            <td>{{epm.empName}}</td>
+            <td>{{epm.designation}}</td>
+            <td>{{epm.salary}}</td>
+            <td>{{epm.isPermanent}}</td>
+            <td>{{epm.email}}</td>
+            <td>{{epm.contact}}</td>
+            <td>
+              <div class=" d-flex justify-content-between">
+              
+              <button  mat-mini-fab color="primary" aria-label="Example icon button with a delete icon">
+                <mat-icon>edit</mat-icon>
+              </button>
+              <button mat-mini-fab color="warn" aria-label="Example icon button with a delete icon">
+                <mat-icon>delete</mat-icon>
+              </button>
+             </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+<div class="container">
+   <h1 class="bg-warning text-center text-dark">2.stdArr.....!!!!</h1>
+  <div class="row">
+    <div class="col-md-12">
+      <table class="table table-bordered bg-warning">
+        <thead class="thead-dark">
+          <tr>
+            <th>rollNo</th>
+            <th>name</th>
+            <th>course</th>
+            <th>year</th>
+            <th>percentage</th>
+            <th>isPassed</th>
+            <th>email</th>
+            <th>contact</th>
+            <th>action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let std of stdArr">
+            <td>{{std.rollNo}}</td>
+            <td>{{std.name}}</td>
+            <td>{{std.course}}</td>
+            <td>{{std.year}}</td>
+            <td>{{std.percentage}}</td>
+            <td>{{std.isPassed}}</td>
+            <td>{{std.email}}</td>
+            <td>{{std.contact}}</td>
+            <td>
+              <div class="d-flex justify-content-between">
+                <button  mat-mini-fab color="primary" aria-label="Example icon button with a delete icon">
+                <mat-icon>edit</mat-icon>
+              </button>
+              <button mat-mini-fab color="warn" aria-label="Example icon button with a delete icon">
+                <mat-icon>delete</mat-icon>
+              </button>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+<div class="container">
+   <h1 class="bg-dark text-center text-white">3.productArr.....!!!!</h1>
+  <div class="row">
+    <div class="col-md-12">
+      <table class="table table-bordered bg-dark text-white">
+        <thead class="thead-dark">
+          <tr>
+            <th>prodId</th>
+            <th>prodName</th>
+            <th>category</th>
+            <th>price</th>
+            <th>stock</th>
+            <th>isAvailable</th>
+            <th>brand</th>
+            <th>action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let pro of productArr">
+          <td>{{pro.prodId}}</td>
+          <td>{{pro.prodName}}</td>
+          <td>{{pro.category}}</td>
+          <td>{{pro.price}}</td>
+          <td>{{pro.stock}}</td>
+          <td>{{pro.isAvailable}}</td>
+          <td>{{pro.brand}}</td>
+          <td>
+            <div class="d-flex justify-content-between">
+                <button  mat-mini-fab color="primary" aria-label="Example icon button with a delete icon">
+                <mat-icon>edit</mat-icon>
+              </button>
+              <button mat-mini-fab color="warn" aria-label="Example icon button with a delete icon">
+                <mat-icon>delete</mat-icon>
+              </button>
+              </div>
+          </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <h1 class="bg-danger text-center text-white">4.course.....!!!!</h1>
+  <div class="row">
+    <div class="col-md-12">
+      <table class="table table-bordered bg-danger text-white">
+        <thead class="thead-dark">
+          <tr>
+            <th>courseId</th>
+            <th>courseName</th>
+            <th>duration</th>
+            <th>fees</th>
+            <th>mode</th>
+            <th>isActive</th>
+            <th>trainer</th>
+            <th>action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let cou of course">
+          <td>{{cou.courseId}}</td>
+          <td>{{cou.courseName}}</td>
+          <td>{{cou.duration}}</td>
+          <td>{{cou.fees}}</td>
+          <td>{{cou.mode}}</td>
+          <td>{{cou.isActive}}</td>
+          <td>{{cou.trainer}}</td>
+          <td>
+            <div class="d-flex justify-content-between">
+                <button  mat-mini-fab color="primary" aria-label="Example icon button with a delete icon">
+                <mat-icon>edit</mat-icon>
+              </button>
+              <button mat-mini-fab color="warn" aria-label="Example icon button with a delete icon">
+                <mat-icon>delete</mat-icon>
+              </button>
+              </div>
+          </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <h1 class="bg-warning text-center text-dark">5.bookArr.....!!!!</h1>
+  <div class="row">
+    <div class="col-md-12">
+      <table class="table table-bordered bg-warning text-dark">
+        <thead class="thead-dark text-white">
+          <tr>
+            <th>bookId</th>
+            <th>title</th>
+            <th>author</th>
+            <th>price</th>
+            <th>pages</th>
+            <th>isAvailable</th>
+            <th>genre</th>
+            <th>action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let book of bookArr">
+          <td>{{book.bookId}}</td>
+          <td>{{book.title}}</td>
+          <td>{{book.author}}</td>
+          <td>{{book.price}}</td>
+          <td>{{book.pages}}</td>
+          <td>{{book.isAvailable}}</td>
+          <td>{{book.genre}}</td>
+          <td>
+            <div class="d-flex justify-content-between">
+                <button  mat-mini-fab color="primary" aria-label="Example icon button with a delete icon">
+                <mat-icon>edit</mat-icon>
+              </button>
+              <button mat-mini-fab color="warn" aria-label="Example icon button with a delete icon">
+                <mat-icon>delete</mat-icon>
+              </button>
+              </div>
+          </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+<div class="container">
+    <h1 class="bg-primary text-center text-white">6.customArr.....!!!!</h1>
+  <div class="row">
+    <div class="col-md-12">
+      <table class="table table-bordered bg-primary text-white">
+        <thead class="thead-dark text-white">
+          <tr>
+            <th>custId</th>
+            <th>name</th>
+            <th>city</th>
+            <th>age</th>
+            <th>email</th>
+            <th>isPrime</th>
+            <th>contact</th>
+            <th>action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let cust of customArr">
+          <td>{{cust.custId}}</td>
+          <td>{{cust.name}}</td>
+          <td>{{cust.city}}</td>
+          <td>{{cust.age}}</td>
+          <td>{{cust.email}}</td>
+          <td>{{cust.isPrime}}</td>
+          <td>{{cust.contact}}</td>
+          <td>
+            <div class="d-flex justify-content-between">
+                <button  mat-mini-fab color="primary" aria-label="Example icon button with a delete icon">
+                <mat-icon>edit</mat-icon>
+              </button>
+              <button mat-mini-fab color="warn" aria-label="Example icon button with a delete icon">
+                <mat-icon>delete</mat-icon>
+              </button>
+              </div>
+          </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+<div class="container">
+    <h1 class="bg-info text-center text-white">7.orderArr.....!!!!</h1>
+  <div class="row">
+    <div class="col-md-12">
+      <table class="table table-bordered bg-info text-white">
+        <thead class="thead-dark text-white">
+          <tr>
+            <th>orderId</th>
+            <th>customerName</th>
+            <th>product</th>
+            <th>amount</th>
+            <th>status</th>
+            <th>date</th>
+            <th>action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let ord of orderArr">
+          <td>{{ord.orderId}}</td>
+          <td>{{ord.customerName}}</td>
+          <td>{{ord.product}}</td>
+          <td>{{ord.amount}}</td>
+          <td>{{ord.status}}</td>
+          <td>{{ord.date}}</td>
+          <td>
+            <div class="d-flex justify-content-between">
+                <button  mat-mini-fab color="primary" aria-label="Example icon button with a delete icon">
+                <mat-icon>edit</mat-icon>
+              </button>
+              <button mat-mini-fab color="warn" aria-label="Example icon button with a delete icon">
+                <mat-icon>delete</mat-icon>
+              </button>
+              </div>
+          </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
